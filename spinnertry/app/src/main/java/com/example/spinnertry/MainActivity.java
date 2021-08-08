@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements
         AdapterView.OnItemSelectedListener {
-    String[] country = { "India", "USA", "China", "Japan", "Other"};
+    String[] country = { "Male" , "Female"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
