@@ -28,25 +28,25 @@ public class MainActivity extends AppCompatActivity {
         edittext4 = (EditText) findViewById(R.id.editText4);
         edittext5 = (EditText) findViewById(R.id.editText5);
         edittext6 = (EditText) findViewById(R.id.editText6);
-        button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String username = edittext1.getText().toString();
-                String address = edittext3.getText().toString() + "  " + edittext4.getText().toString() + " " + edittext5.getText().toString();
-                String age = edittext6.getText().toString();
-                radioGroup = (RadioGroup)findViewById(R.id.radiogroup);
-                radioButton = (RadioButton) findViewById(radioGroup.getCheckedRadioButtonId());
-                String gender = radioButton.getText().toString();
-                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-                intent.putExtra("username", username);
-                intent.putExtra("address", address);
-                intent.putExtra("age", age);
-                intent.putExtra("gender", gender);
-                startActivity(intent);
+            button = (Button) findViewById(R.id.button);
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    String username = edittext1.getText().toString();
+                    String address = edittext3.getText().toString() + "  " + edittext4.getText().toString() + " " + edittext5.getText().toString();
+                    String age = edittext6.getText().toString();
+                    radioGroup = (RadioGroup)findViewById(R.id.radiogroup);
+                    radioButton = (RadioButton) findViewById(radioGroup.getCheckedRadioButtonId());
+                    String gender = radioButton.getText().toString();
+                    Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                    intent.putExtra("username", username);
+                    intent.putExtra("address", address);
+                    intent.putExtra("age", age);
+                    intent.putExtra("gender", gender);
+                    startActivity(intent);
 
-            }
-        });
+                }
+            });
 
     }
 }

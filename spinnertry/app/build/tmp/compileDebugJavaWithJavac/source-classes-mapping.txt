@@ -1,0 +1,4 @@
+com/example/spinnertry/BuildConfig.java
+ com.example.spinnertry.BuildConfig
+com/example/spinnertry/MainActivity.java
+ com.example.spinnertry.MainActivity
